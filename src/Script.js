@@ -1,7 +1,6 @@
-// Armazena os registros
 const registros = [];
 
-// Função para registrar a entrada
+
 function registrarEntrada() {
     const aluno = document.getElementById('aluno').value;
     if (aluno) {
@@ -30,13 +29,4 @@ function registrarSaida() {
     }
 }
 
-// Atualiza a lista de registros no HTML
-function atualizarRegistros() {
-    const lista = document.getElementById('registros');
-    lista.innerHTML = '';
-    registros.forEach(registro => {
-        const li = document.createElement('li');
-        li.textContent = `Aluno: ${registro.aluno}, Entrada: ${registro.entrada}, Saída: ${registro.saida || 'Não registrada'}`;
-        lista.appendChild(li);
-    });
-}
+
